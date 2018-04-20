@@ -1,0 +1,25 @@
+集合接口——
+1.Collection 接口存储一组不唯一，无序的对象
+	1.List 接口存储一组不唯一，有序（插入顺序）的对象
+		实现类——
+		1.ArrayList实现了长度可变的数组，遍历元素和随机访问元素的效率高
+			Vector和ArrayList的异同
+			相同：实现原理、功能相同，可以互用
+			主要区别：
+			1.Vector线程安全，ArrayList重速度轻安全，线程非安全
+			2.长度需增长时，Vector默认增长一倍，ArrayList增长50%
+		2.LinkedList采用链表存储方法。插入，删除元素时效率高
+	2.Set接口存储一组唯一，无序的对象
+		1.HashSet
+		2.TreeSet
+2.Map接口存储一组键值对象，提供key（唯一）到value的映射
+	1.HashMap
+		HashMap和Hashtable的异同：
+		相同点：实现原理，功能相同，可以互用
+		区别：
+		 1.Hashtable继承自Dictionary类，而HashMap实现了Map接口
+		 2.Hashtable线程安全，HashMap线程非安全
+		 3.Hashtable不允许null值，HashMap允许null值
+	2.TreeMap
+
+
